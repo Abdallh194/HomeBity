@@ -1,0 +1,47 @@
+.Navbar {
+  .logo {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: $logo-font;
+    color: black;
+  }
+  .links {
+    width: 100%;
+    justify-content: center;
+    a {
+      color: rgb(31, 31, 31);
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-right: 35px;
+    }
+    .active {
+      background-color: $main-color;
+      color: white !important;
+      border-radius: 8px;
+    }
+  }
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      position: relative;
+      padding: 20px 0;
+      text-align: center;
+      z-index: 4;
+      background-color: #043f47c7;
+      margin-top: 10px;
+      border-radius: 5px;
+      .link {
+        color: white;
+        margin-right: 0;
+      }
+    }
+    .Gb-btn {
+      margin: auto;
+    }
+    .logo {
+      font-size: 1.7rem;
+    }
+    .img-fluid {
+      max-width: 29%;
+    }
+  }
+}

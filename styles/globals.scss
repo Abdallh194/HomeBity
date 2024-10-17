@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "bootstrap/dist/css/bootstrap.css"; //bootstrap
+
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); //logofont
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); //main-font
+
+//vars
+$main-color: #043f47;
+$logo-font: "Pacifico";
+$main-font: "Montserrat";
+
+body,
+html {
+  overflow-x: hidden;
+  font-family: $main-font !important;
+}
+.cus_Margin_Padding {
+  margin-top: 50px;
+  padding: 40px 10px;
+  // @media (max-width: 992px) {
+  //   margin-top: 0;
+  // }
+}
+.txtDecoration_None {
+  text-decoration: none;
+}
+
+.Gb-btn {
+  background-color: $main-color;
+  width: 170px;
+  padding: 12px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@import "assets/AppBar";
+@import "assets/Header";

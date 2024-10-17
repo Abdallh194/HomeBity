@@ -1,0 +1,216 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Montserrat" !important;
+}
+
+.cus_Margin_Padding {
+  margin-top: 50px;
+  padding: 40px 10px;
+}
+
+.txtDecoration_None {
+  text-decoration: none;
+}
+
+.Gb-btn {
+  background-color: #043f47;
+  width: 170px;
+  padding: 12px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.Navbar .logo {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Pacifico";
+  color: black;
+}
+.Navbar .links {
+  width: 100%;
+  justify-content: center;
+}
+.Navbar .links a {
+  color: rgb(31, 31, 31);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-right: 35px;
+}
+.Navbar .links .active {
+  background-color: #043f47;
+  color: white !important;
+  border-radius: 8px;
+}
+@media (max-width: 992px) {
+  .Navbar .navbar-collapse {
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 4;
+    background-color: rgba(4, 63, 71, 0.7803921569);
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  .Navbar .navbar-collapse .link {
+    color: white;
+    margin-right: 0;
+  }
+  .Navbar .Gb-btn {
+    margin: auto;
+  }
+  .Navbar .logo {
+    font-size: 1.7rem;
+  }
+  .Navbar .img-fluid {
+    max-width: 29%;
+  }
+}
+
+.Header {
+  position: relative;
+}
+.Header .container {
+  max-width: 1600px;
+}
+.Header .row {
+  margin-top: 100px;
+}
+.Header .InfoCard {
+  padding: 20px;
+}
+.Header .main-head {
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #043f47;
+}
+.Header .main-head .wo1 {
+  font-weight: 500;
+  color: black;
+}
+.Header .main-head .wo2 {
+  display: block;
+  font-size: 11rem;
+  letter-spacing: 19px;
+  font-weight: 700;
+  margin-top: -29px;
+}
+.Header .line {
+  width: 50%;
+  position: relative;
+  height: 9px;
+  left: 50%;
+  border-radius: 8px;
+  transform: translateX(-50%);
+  background-color: #008fa3;
+}
+.Header .info {
+  font-size: 1.2rem;
+  margin-top: 69px;
+  font-weight: 600;
+  color: #646464;
+}
+.Header .ImgCard {
+  position: relative;
+}
+.Header .ImgCard .img-container {
+  position: absolute;
+  border: 18px solid white;
+  width: 112%;
+}
+.Header .ImgCard .img-container::before, .Header .ImgCard .img-container::after {
+  position: absolute;
+  content: "";
+  background-color: #043f47;
+  width: 76%;
+  height: 76%;
+  -webkit-clip-path: polygon(10% 24%, 99% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(10% 24%, 99% 0, 100% 100%, 0% 100%);
+}
+.Header .ImgCard .img-container::before {
+  left: 0;
+  top: -22px;
+}
+.Header .ImgCard .img-container::after {
+  right: -70px;
+  bottom: -76px;
+  z-index: -1;
+}
+.Header .ImgCard .img-fluid {
+  -webkit-clip-path: polygon(10% 24%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(10% 24%, 100% 0, 100% 100%, 0% 100%);
+}
+@media (max-width: 1500px) {
+  .Header .main-head {
+    font-size: 3.7rem;
+  }
+  .Header .main-head .wo2 {
+    font-size: 9rem;
+    letter-spacing: 14px;
+  }
+  .Header .ImgCard .img-container {
+    width: 93%;
+  }
+}
+@media (max-width: 1200px) {
+  .Header .main-head {
+    font-size: 3rem;
+  }
+  .Header .main-head .wo2 {
+    font-size: 7rem;
+    letter-spacing: 6px;
+    margin-top: -11px;
+  }
+}
+@media (max-width: 992px) {
+  .Header .ImgCard {
+    margin-top: 35px;
+  }
+  .Header .ImgCard .img-container {
+    position: relative;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .Header .InfoCard {
+    padding: 10px;
+  }
+  .Header .row {
+    margin-top: 65px;
+  }
+  .Header .info {
+    font-size: 1rem;
+    margin-top: 45px;
+  }
+  .Header .main-head {
+    font-size: 2.7rem;
+  }
+  .Header .main-head .wo2 {
+    font-size: 6rem;
+    margin-top: -11px;
+    letter-spacing: 4px;
+  }
+  .Header .ImgCard .img-container {
+    border-width: 11px;
+  }
+  .Header .ImgCard .img-container::before {
+    left: -5px;
+    top: -30px;
+  }
+}/*# sourceMappingURL=globals.css.map */

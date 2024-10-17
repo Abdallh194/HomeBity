@@ -1,0 +1,136 @@
+.Header {
+  position: relative;
+  .container {
+    max-width: 1600px;
+  }
+  .row {
+    margin-top: 100px;
+  }
+  .InfoCard {
+    padding: 20px;
+  }
+  .main-head {
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: $main-color;
+    .wo1 {
+      font-weight: 500;
+      color: black;
+    }
+    .wo2 {
+      display: block;
+      font-size: 11rem;
+      letter-spacing: 19px;
+      font-weight: 700;
+      margin-top: -29px;
+    }
+  }
+  .line {
+    width: 50%;
+    position: relative;
+    height: 9px;
+    left: 50%;
+    border-radius: 8px;
+    transform: translateX(-50%);
+    background-color: #008fa3;
+  }
+  .info {
+    font-size: 1.2rem;
+    margin-top: 69px;
+    font-weight: 600;
+    color: #646464;
+  }
+  .ImgCard {
+    position: relative;
+    .img-container {
+      position: absolute;
+      border: 18px solid white;
+      width: 112%;
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $main-color;
+        width: 76%;
+        height: 76%;
+        clip-path: polygon(10% 24%, 99% 0, 100% 100%, 0% 100%);
+      }
+      &::before {
+        left: 0;
+        top: -22px;
+      }
+      &::after {
+        right: -70px;
+        bottom: -76px;
+        z-index: -1;
+      }
+    }
+    .img-fluid {
+      clip-path: polygon(10% 24%, 100% 0, 100% 100%, 0% 100%);
+    }
+  }
+  @media (max-width: 1500px) {
+    .main-head {
+      font-size: 3.7rem;
+      .wo2 {
+        font-size: 9rem;
+        letter-spacing: 14px;
+      }
+    }
+    .ImgCard {
+      .img-container {
+        width: 93%;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .main-head {
+      font-size: 3rem;
+      .wo2 {
+        font-size: 7rem;
+        letter-spacing: 6px;
+        margin-top: -11px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .ImgCard {
+      margin-top: 35px;
+      .img-container {
+        position: relative;
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .InfoCard {
+      padding: 10px;
+    }
+    .row {
+      margin-top: 65px;
+    }
+    .info {
+      font-size: 1rem;
+      margin-top: 45px;
+    }
+    .main-head {
+      font-size: 2.7rem;
+      .wo2 {
+        font-size: 6rem;
+        margin-top: -11px;
+        letter-spacing: 4px;
+      }
+    }
+    .ImgCard {
+      .img-container {
+        border-width: 11px;
+        &::before {
+          left: -5px;
+          top: -30px;
+        }
+      }
+    }
+  }
+}
