@@ -1,0 +1,83 @@
+footer {
+  background-color: #043f47;
+  color: white;
+  padding: 65px 5px 10px 5px;
+  margin-top: 72px;
+}
+footer .logo {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Pacifico";
+  color: black;
+}
+footer .info {
+  font-size: 1.3rem;
+  width: 70%;
+  color: #d0d0d0;
+}
+
+footer .socials {
+  width: 38%;
+  display: flex;
+  font-size: 28px;
+  justify-content: space-between;
+}
+footer .socials .icon {
+  color: white;
+}
+footer .head {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+footer .desc {
+  margin-top: 30px;
+  font-size: 19px;
+  color: #d8d8d8;
+  cursor: pointer;
+}
+footer .copy a {
+  color: aqua;
+  text-decoration: none;
+  font-weight: 700;
+}
+footer .copy {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  footer .logo {
+    font-size: 1.5rem;
+  }
+  footer .img-fluid {
+    max-width: 30%;
+  }
+  footer .socials {
+    width: 85%;
+    font-size: 23px;
+    margin-top: 1.5rem !important;
+  }
+  footer .head {
+    font-size: 1.2rem;
+  }
+  footer .desc {
+    margin-top: 27px !important;
+    font-size: 17px;
+  }
+  footer .footer-card {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  footer .info {
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 1.5rem !important;
+  }
+  footer .socials .icon {
+    margin-right: 16px;
+  }
+  footer .copy {
+    text-align: center;
+    line-height: 2;
+    display: block;
+  }
+}

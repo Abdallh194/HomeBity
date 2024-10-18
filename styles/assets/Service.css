@@ -1,0 +1,112 @@
+.DreamDesign {
+  margin-top: 100px;
+}
+.DreamDesign .container {
+  max-width: 1600px;
+}
+.DreamDesign .gb-head {
+  font-size: 3.45rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #043f47;
+}
+.DreamDesign .DreamDesign-card .card-details {
+  margin-top: 60px;
+}
+.DreamDesign .DreamDesign-card .icon {
+  background-color: #043f47;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px;
+  margin-right: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 25px;
+}
+.DreamDesign .DreamDesign-card .cus-line {
+  position: relative;
+}
+.DreamDesign .DreamDesign-card .cus-line::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100px;
+  background-color: #acacac;
+  left: 50%;
+  top: 150%;
+}
+.DreamDesign .DreamDesign-card .card-info .head {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.DreamDesign .DreamDesign-card .card-info .desc {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(92 92 92);
+  margin-top: 1.5rem;
+  width: 70%;
+}
+@media (max-width: 1400px) {
+  .DreamDesign .DreamDesign-card .card-info .desc {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .DreamDesign .DreamDesign-card .card-details {
+    margin-top: 35px;
+  }
+  .DreamDesign .gb-head {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1200px) {
+  .DreamDesign .DreamDesign-card .mt-5 {
+    margin-top: 12px !important;
+  }
+  .DreamDesign .DreamDesign-card .card-info .desc {
+    font-size: 1rem;
+  }
+  .DreamDesign .DreamDesign-card .cus-line::before {
+    height: 50px;
+    top: 135%;
+  }
+  .DreamDesign .gb-head {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .DreamDesign {
+    margin-top: 0;
+  }
+  .DreamDesign .Image-card {
+    margin-top: 35px;
+  }
+  .DreamDesign .Image-card .img-fluid {
+    width: 100%;
+  }
+  .DreamDesign .DreamDesign-card .mt-5 {
+    margin-top: 35px !important;
+  }
+}
+@media (max-width: 767px) {
+  .DreamDesign .DreamDesign-card .mt-5 {
+    margin-top: 48px !important;
+  }
+  .DreamDesign .DreamDesign-card .icon {
+    margin-right: 18px;
+  }
+  .DreamDesign .DreamDesign-card .card-info .head {
+    margin-top: 11px;
+    font-size: 1.6rem;
+    font-weight: 800;
+  }
+  .DreamDesign .DreamDesign-card .cus-line::before {
+    height: 116px;
+    top: 134%;
+    transform: translateX(-50%);
+  }
+}

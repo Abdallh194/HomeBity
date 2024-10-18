@@ -1,6 +1,8 @@
 @import "bootstrap/dist/css/bootstrap.css";
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "assets/Service.css";
+@import "assets/Footer.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +15,11 @@ html {
 .cus_Margin_Padding {
   margin-top: 50px;
   padding: 40px 10px;
+}
+@media (max-width: 992px) {
+  .cus_Margin_Padding {
+    padding: 40px 0px;
+  }
 }
 
 .txtDecoration_None {
@@ -212,5 +219,117 @@ html {
   .Header .ImgCard .img-container::before {
     left: -5px;
     top: -30px;
+  }
+}
+
+.AboutUs {
+  background-color: #043f47;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: white;
+  margin-top: 50px;
+}
+.AboutUs .infoCard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0px;
+}
+.AboutUs .infoCard .num {
+  background-color: white;
+  color: #043f47;
+  height: 82px;
+  width: 82px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin: auto;
+}
+.AboutUs .infoCard .name {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 11px;
+}
+.AboutUs .infoCard .triple-x {
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 50px;
+  font-size: 50px;
+  font-family: cursive;
+}
+.AboutUs .infoCard .triple-x span {
+  margin-right: 17px;
+}
+.AboutUs .infoCard .main-head {
+  font-size: 43px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.AboutUs .infoCard .main-head span {
+  color: aqua;
+  font-size: 56px;
+}
+.AboutUs .infoCard .sub-head {
+  background-color: white;
+  color: #043f47;
+  font-family: "Pacifico";
+  font-size: 25px;
+  padding: 12px;
+  width: 74%;
+  margin: 30px auto;
+}
+.AboutUs .infoCard .info {
+  width: 80%;
+  margin: auto;
+}
+.AboutUs .infoCard .Gb-btn {
+  background-color: white;
+  color: #043f47;
+  margin: 30px auto 0px auto;
+}
+.AboutUs .img-fluid {
+  height: 100%;
+}
+@media (max-width: 1400px) {
+  .AboutUs .infoCard .main-head {
+    font-size: 32px;
+  }
+  .AboutUs .infoCard .sub-head {
+    width: 78%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .AboutUs {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .AboutUs .infoCard .num {
+    height: 70px;
+    width: 70px;
+    font-size: 21px;
+  }
+  .AboutUs .infoCard .name {
+    font-size: 15px;
+  }
+  .AboutUs .infoCard .main-head span {
+    font-size: 47px;
+  }
+  .AboutUs .infoCard .sub-head {
+    width: 100%;
+    font-size: 19px;
+  }
+  .AboutUs .infoCard .triple-x {
+    margin-top: 20px;
+    font-size: 49px;
+  }
+  .AboutUs .infoCard .info {
+    width: 100%;
   }
 }/*# sourceMappingURL=globals.css.map */

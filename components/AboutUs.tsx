@@ -1,41 +1,61 @@
+import Image from "next/image";
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 
 const AboutUs = () => {
   return (
-    <div id="AboutUs" className="AboutUs cus_Margin_Padding">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, laudantium?
-      Excepturi quos labore, veritatis exercitationem illum quas rerum, enim ut
-      tempore neque dolore, iusto adipisci tenetur! Nihil voluptatibus natus
-      rerum? Illum sed alias maxime labore, velit aut, assumenda debitis
-      voluptatum ipsam et, maiores exercitationem? Deserunt quaerat odit
-      necessitatibus, voluptates, illum sed labore ipsa ea dignissimos
-      consequatur voluptatum molestiae aliquid debitis! Fuga iure facere, quidem
-      ipsum sequi id inventore perspiciatis, soluta repellat alias, adipisci
-      corporis qui quaerat veniam distinctio delectus quae obcaecati commodi
-      rerum sed. Aut vero voluptates error dicta fugit. Corporis accusantium
-      adipisci culpa dolorem sed enim doloremque, velit nobis? Reiciendis
-      explicabo aspernatur corrupti ea culpa! Laboriosam ratione voluptatem
-      veniam fugit, nemo distinctio, ad nobis, in quis ipsum maxime soluta. Iure
-      ex officiis voluptate enim modi dolores beatae accusamus assumenda
-      numquam, reiciendis temporibus voluptates earum, nisi maxime ipsum rerum?
-      Sint culpa reprehenderit accusamus eligendi voluptas? Suscipit unde
-      similique exercitationem laborum? Rerum deleniti facere, accusantium neque
-      accusamus doloribus natus doloremque nihil ullam ratione laudantium
-      nostrum animi, ex, in provident omnis autem laboriosam. Assumenda tempore
-      cumque in consequuntur saepe odit, quod ex! Perferendis voluptates,
-      facilis illo perspiciatis laudantium nam. Quisquam vero ducimus in
-      voluptatem necessitatibus quia consectetur laudantium atque modi, earum
-      ad, molestias harum. Tenetur error iure quidem consectetur sed, distinctio
-      fuga! Perspiciatis voluptatem, deleniti modi atque tenetur amet doloribus
-      consequatur temporibus illum aut soluta id corrupti nobis similique libero
-      quas maiores praesentium sit blanditiis qui architecto reprehenderit
-      laborum? Numquam, fugit nam. Officia praesentium dolorem hic quod,
-      possimus quasi, animi doloribus, aperiam dicta a rem sunt reprehenderit
-      corrupti eaque repellat? Quidem dignissimos sit dolore culpa magni fugit
-      recusandae, fuga nulla ad hic. Repudiandae ad optio adipisci repellat
-      ducimus dolorum ipsum aliquam iste fugiat consequuntur, quia
-      necessitatibus praesentium odio numquam eius molestias impedit doloremque
-      iusto! Nihil sit sed saepe! Vero et ipsam necessitatibus?
+    <div id="AboutUs" className="AboutUs ">
+      <Container fluid>
+        <Row>
+          <Col md={12} lg={6} className="infoCard">
+            <div className="work-nums d-flex">
+              <div className="col text-center">
+                <div className="num">+12K</div>
+                <div className="name">Project Complete</div>
+              </div>
+              <div className="col text-center">
+                <div className="num">+6K</div>
+                <div className="name">Satisfied Clients </div>
+              </div>
+              <div className="col text-center">
+                <div className="num">+7K</div>
+                <div className="name">Unique Styles </div>
+              </div>
+              <div className="col text-center">
+                <div className="num">+3K</div>
+                <div className="name">Review Complete</div>
+              </div>
+            </div>
+            <div className="triple-x">
+              <span>x</span>
+              <span>x</span>
+              <span>x</span>
+            </div>
+            <div className="main-head">
+              Designing Your Dream With Brilliance{" "}
+              <span className="d-block">with HomeBity</span>
+            </div>
+            <div className="sub-head">
+              Designing Your Dream in Three Simple Steps
+            </div>
+            <div className="info">
+              Elevate your spaces with bespoke interior designs that reflect
+              your unique style and aspirations, crafted with precision and
+              brilliance for an unforgettable
+            </div>
+            <div className=" Gb-btn ">Start Project</div>
+          </Col>
+          <Col md={12} lg={6} className="ImgCard p-0">
+            <Image
+              src="/about.jpg"
+              alt="about image"
+              width={1200}
+              height={5000}
+              className="img-fluid"
+            />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

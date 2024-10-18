@@ -1,0 +1,114 @@
+.AboutUs {
+  background-color: $main-color;
+  height: fit-content;
+  color: white;
+  margin-top: 50px;
+  .infoCard {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0px;
+    .num {
+      background-color: white;
+      color: $main-color;
+      height: 82px;
+      width: 82px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 700;
+      margin: auto;
+    }
+    .name {
+      font-size: 17px;
+      font-weight: 500;
+      margin-top: 11px;
+    }
+    .triple-x {
+      margin: auto;
+      width: fit-content;
+      margin-top: 50px;
+      font-size: 50px;
+      font-family: cursive;
+      span {
+        margin-right: 17px;
+      }
+    }
+    .main-head {
+      font-size: 43px;
+      font-weight: 700;
+      margin-top: 15px;
+
+      span {
+        color: aqua;
+        font-size: 56px;
+      }
+    }
+    .sub-head {
+      background-color: white;
+      color: $main-color;
+      font-family: $logo-font;
+      font-size: 25px;
+      padding: 12px;
+      width: 74%;
+      margin: 30px auto;
+    }
+    .info {
+      width: 80%;
+      margin: auto;
+    }
+    .Gb-btn {
+      background-color: white;
+      color: $main-color;
+      margin: 30px auto 0px auto;
+    }
+  }
+  .img-fluid {
+    height: 100%;
+  }
+  @media (max-width: 1400px) {
+    .infoCard {
+      .main-head {
+        font-size: 32px;
+      }
+      .sub-head {
+        width: 78%;
+        font-size: 20px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    margin-top: 120px;
+  }
+  @media (max-width: 767px) {
+    .infoCard {
+      .num {
+        height: 70px;
+        width: 70px;
+        font-size: 21px;
+      }
+      .name {
+        font-size: 15px;
+      }
+      .main-head {
+        span {
+          font-size: 47px;
+        }
+      }
+      .sub-head {
+        width: 100%;
+        font-size: 19px;
+      }
+      .triple-x {
+        margin-top: 20px;
+        font-size: 49px;
+      }
+      .info {
+        width: 100%;
+      }
+    }
+  }
+}
