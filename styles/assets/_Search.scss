@@ -1,0 +1,47 @@
+.Search {
+  .head {
+    background-color: $main-color;
+    color: white;
+    padding: 15px;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .backBtn {
+    background-color: $main-color;
+    color: white;
+    font-size: 18px;
+    padding: 8px 13px;
+    border-radius: 8px;
+  }
+  .sale-head {
+    font-size: 1.4rem;
+  }
+
+  .animation {
+    max-width: 20%;
+    margin: auto;
+  }
+  .error-head {
+    color: red;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  @media (max-width: 992px) {
+    .animation {
+      max-width: 60%;
+    }
+  }
+  @media (max-width: 767px) {
+    .sale-head {
+      font-size: 1.1rem;
+    }
+    .backBtn {
+      margin-top: 1rem;
+    }
+    .animation {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -43,7 +44,20 @@ const AboutUs = () => {
               your unique style and aspirations, crafted with precision and
               brilliance for an unforgettable
             </div>
-            <div className=" Gb-btn ">Start Project</div>
+            <div className="">
+              <Link
+                href="/orderSale"
+                className=" Gb-btn d-block txtDecoration_None"
+              >
+                Sale a House
+              </Link>
+              <Link
+                href="/orderRent"
+                className=" Gb-btn d-block txtDecoration_None"
+              >
+                Rent a House
+              </Link>
+            </div>
           </Col>
           <Col md={12} lg={6} className="ImgCard p-0">
             <Image

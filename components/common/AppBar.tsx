@@ -39,7 +39,7 @@ function AppBar() {
           </Nav>
 
           <Nav className="RequestBtn">
-            <Link className="Gb-btn txtDecoration_None" href="/register">
+            <Link className="Gb-btn txtDecoration_None" href="/order">
               Quick Request
             </Link>
           </Nav>

@@ -1,19 +1,9 @@
 "use client";
-// import GetData from "@/Redux/features/User/FetchDataThunk";
-// import { useAppDispatch, useAppSelector } from "@/Redux/hooks";
 import Image from "next/image";
-import React from //  ,{ useEffect }
-"react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
 const Header = () => {
-  // const { AllItems, loading, error } = useAppSelector((s) => s.User);
-  // const dispatch = useAppDispatch();
-  // useEffect(() => {
-  //   dispatch(GetData());
-  // }, [dispatch]);
-  // console.log(AllItems, loading, error);
-
   return (
     <div className="Header">
       <Container>

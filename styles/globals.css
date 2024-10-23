@@ -332,4 +332,206 @@ html {
   .AboutUs .infoCard .info {
     width: 100%;
   }
+}
+
+.Order .top-head {
+  height: 400px;
+  background: url("/order.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+.Order .top-head .overlay {
+  background-color: rgba(3, 51, 57, 0.662745098);
+}
+.Order .top-head .title {
+  font-size: 60px;
+  font-weight: 600;
+}
+.Order .sale-head {
+  font-size: 1.5rem;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Order .sale-head::before {
+  position: absolute;
+  content: "";
+  width: 43%;
+  height: 2px;
+  background-color: #00a3b9;
+  bottom: -2px;
+  left: 0;
+}
+.Order .search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 43px 0px;
+  position: relative;
+}
+.Order .RentBar {
+  background-color: #043f47;
+  color: white;
+}
+.Order .form {
+  display: flex;
+  width: 40%;
+}
+.Order .formInput {
+  border-radius: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.Order .searchBtn {
+  background-color: #ff5fa3;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  border-top-right-radius: 8px;
+  color: white;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media (max-width: 1400px) {
+  .Order .top-head .title {
+    font-size: 44px;
+  }
+}
+@media (max-width: 992px) {
+  .Order .top-head {
+    text-align: center;
+    height: 320px;
+  }
+  .Order .top-head .title {
+    font-size: 34px;
+  }
+  .Order .top-head .fs-5 {
+    font-size: 1rem !important;
+  }
+}
+
+.Details-container {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: auto;
+  color: black;
+}
+.Details-container .verified {
+  display: inline-block;
+  font-size: 17px;
+  color: #0db8b8;
+  margin: -4px -4px 0 0;
+}
+.Details-container .img-container {
+  height: 312px;
+}
+.Details-container .img-container .img-fluid {
+  width: 100%;
+  height: 100%;
+}
+.Details-container .house-details {
+  padding: 20px 0;
+}
+.Details-container .price {
+  font-size: 25px;
+  font-weight: 500;
+}
+.Details-container .price span {
+  font-size: 14px;
+}
+.Details-container .house-area {
+  position: relative;
+  font-weight: 500;
+}
+.Details-container .house-area span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.Details-container .house-area span::after {
+  position: absolute;
+  content: "";
+  right: -25px;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background-color: #9e9e9e;
+}
+.Details-container .title {
+  font-size: 18px;
+  height: 55px;
+}
+.Details-container .contacts .icon {
+  margin-right: 25px;
+  color: #043f47;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+@media (max-width: 1200px) {
+  .Details-container {
+    width: 50% !important;
+  }
+}
+@media (max-width: 992px) {
+  .Details-container {
+    width: 60% !important;
+  }
+}
+@media (max-width: 767px) {
+  .Details-container {
+    width: 100% !important;
+  }
+}
+
+.Search .head {
+  background-color: #043f47;
+  color: white;
+  padding: 15px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.Search .backBtn {
+  background-color: #043f47;
+  color: white;
+  font-size: 18px;
+  padding: 8px 13px;
+  border-radius: 8px;
+}
+.Search .sale-head {
+  font-size: 1.4rem;
+}
+.Search .animation {
+  max-width: 20%;
+  margin: auto;
+}
+.Search .error-head {
+  color: red;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .Search .animation {
+    max-width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .Search .sale-head {
+    font-size: 1.1rem;
+  }
+  .Search .backBtn {
+    margin-top: 1rem;
+  }
+  .Search .animation {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=globals.css.map */

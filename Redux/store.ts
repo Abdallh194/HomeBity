@@ -1,10 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import UserSlice from "./features/User/UserSlice";
+import SaleSlice from "./features/SaleSlice";
+import RentSlice from "./features/RentSlice";
+import GbSlice from "./features/GbSlice";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      User: UserSlice,
+      Sale: SaleSlice,
+      Rent: RentSlice,
+      Global: GbSlice,
     },
   });
 };

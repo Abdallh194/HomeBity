@@ -1,44 +1,35 @@
 import { createSlice } from "@reduxjs/toolkit";
-import GetData from "./FetchDataThunk";
+import GetSale from "./act/FetchDataThunk";
 
 export interface IProductsState {
-  AllItems: {
-    id: string;
-    images: string;
-    title: string;
-    price: number;
-    cat_prefix: string;
-    Quantity?: number;
-    discount: string;
-    max: number;
-  }[];
+  SaleHouse: [];
   loading: "pending" | "succeeded" | "failed";
   error: string | null;
 }
 
 const initialState: IProductsState = {
-  AllItems: [],
+  SaleHouse: [],
   loading: "pending",
   error: null,
 };
 
 const UserState = createSlice({
-  name: "currentUser",
+  name: "sale",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    //Get All Products
-    builder.addCase(GetData.pending, (state) => {
+    //Get Sale Houses
+    builder.addCase(GetSale.pending, (state) => {
       state.loading = "pending";
       state.error = null;
     });
-    builder.addCase(GetData.fulfilled, (state, action) => {
+    builder.addCase(GetSale.fulfilled, (state, action) => {
       state.loading = "succeeded";
       if (action.payload) {
-        state.AllItems = action.payload;
+        state.SaleHouse = action.payload;
       }
     });
-    builder.addCase(GetData.rejected, (state, action) => {
+    builder.addCase(GetSale.rejected, (state, action) => {
       state.loading = "failed";
       if (action.payload && typeof action.payload === "string") {
         state.error = action.payload;
@@ -47,5 +38,5 @@ const UserState = createSlice({
   },
 });
 
-export { GetData };
+export { GetSale };
 export default UserState.reducer;
