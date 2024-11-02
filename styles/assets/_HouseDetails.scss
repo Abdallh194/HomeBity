@@ -10,7 +10,6 @@
     margin-top: 3rem;
   }
   .swiper-wrapper {
-    margin-top: 50px;
     display: flex;
     align-items: center;
     .img-fluid {
@@ -110,6 +109,42 @@
       color: white;
       margin-top: 10px;
       padding: 2px 8px;
+    }
+  }
+  @media (max-width: 992px) {
+    .swiper-wrapper {
+      .img-fluid {
+        height: 305px;
+      }
+    }
+    .house-details-card {
+      margin-top: 40px;
+    }
+    .house-area {
+      width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    .house-area {
+      span {
+        &::after {
+          right: -10px;
+        }
+      }
+    }
+    .location {
+      span {
+        margin-right: 12px;
+        &::after {
+          right: -6px;
+        }
+      }
+    }
+    .head {
+      font-size: 1.1rem;
+    }
+    .cusmt {
+      margin-top: 1rem;
     }
   }
 }

@@ -415,6 +415,13 @@ html {
   .Order .top-head .fs-5 {
     font-size: 1rem !important;
   }
+  .Order .search-bar {
+    display: block;
+  }
+  .Order .form {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 .Details-container {
@@ -547,7 +554,6 @@ html {
   margin-top: 3rem;
 }
 .HouseDetails .swiper-wrapper {
-  margin-top: 50px;
   display: flex;
   align-items: center;
 }
@@ -645,4 +651,32 @@ html {
   color: white;
   margin-top: 10px;
   padding: 2px 8px;
+}
+@media (max-width: 992px) {
+  .HouseDetails .swiper-wrapper .img-fluid {
+    height: 305px;
+  }
+  .HouseDetails .house-details-card {
+    margin-top: 40px;
+  }
+  .HouseDetails .house-area {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .HouseDetails .house-area span::after {
+    right: -10px;
+  }
+  .HouseDetails .location span {
+    margin-right: 12px;
+  }
+  .HouseDetails .location span::after {
+    right: -6px;
+  }
+  .HouseDetails .head {
+    font-size: 1.1rem;
+  }
+  .HouseDetails .cusmt {
+    margin-top: 1rem;
+  }
 }/*# sourceMappingURL=globals.css.map */
