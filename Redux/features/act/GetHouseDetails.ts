@@ -7,12 +7,13 @@ const GetHouseDetails = createAsyncThunk(
     const { rejectWithValue } = thunkapi;
     try {
       const req = await fetch(
-        `https://bayut-com1.p.rapidapi.com/properties/detail?externalID=${externalID}`,
+        `https://bayut.p.rapidapi.com/properties/detail?externalID=${externalID}`,
         {
+          method: "GET",
           headers: {
             "x-rapidapi-key":
-              "9b7928c1d2msha124e05e4b043abp1ede7bjsnbf13cd325843",
-            "x-rapidapi-host": "bayut-com1.p.rapidapi.com",
+              "32a452f4bbmsh3f09250ab34ee28p13eb29jsn2a516c670511",
+            "x-rapidapi-host": "bayut.p.rapidapi.com",
           },
         }
       );

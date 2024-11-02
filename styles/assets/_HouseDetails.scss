@@ -1,0 +1,115 @@
+.HouseDetails {
+  .head {
+    background-color: $main-color;
+    color: white;
+    padding: 15px;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .cusmt {
+    margin-top: 3rem;
+  }
+  .swiper-wrapper {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    .img-fluid {
+      max-width: 100%;
+      height: 460px;
+    }
+  }
+  .contacts {
+    margin-top: 20px;
+    .icon {
+      background-color: #e5eff0;
+      color: $main-color;
+      display: flex;
+      align-items: center;
+      padding: 7px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+  }
+  .price {
+    font-size: 25px;
+    font-weight: 500;
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .verified {
+    display: inline-block;
+    font-size: 17px;
+    color: #0db8b8;
+    margin: -4px -4px 0 0;
+  }
+  .house-area {
+    position: relative;
+    font-weight: 500;
+    width: 85%;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        right: -34px;
+        top: 10%;
+        height: 80%;
+        width: 1px;
+        background-color: #9e9e9e;
+      }
+    }
+  }
+  .title {
+    font-size: 19px;
+  }
+  .location {
+    font-size: 18px;
+    span {
+      display: inline-block;
+      margin-right: 30px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        right: -14px;
+        top: 10%;
+        height: 80%;
+        width: 1px;
+        background-color: #9e9e9e;
+      }
+    }
+  }
+  .property {
+    border-bottom: 1px solid #eee;
+    padding: 5px 6px 8px 13px;
+    display: flex;
+    div {
+      width: 160px;
+    }
+    span {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  .amenities {
+    .amenti {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    span {
+      display: inline-block;
+      margin-right: 10px;
+      position: relative;
+      background-color: #008fa3;
+      color: white;
+      margin-top: 10px;
+      padding: 2px 8px;
+    }
+  }
+}

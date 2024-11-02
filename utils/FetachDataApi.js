@@ -1,14 +1,15 @@
 import axios from "axios";
 
-const BASE_URL = "https://bayut.p.rapidapi.com";
-const options = {
-  headers: {
-    "x-rapidapi-key": "9b7928c1d2msha124e05e4b043abp1ede7bjsnbf13cd325843",
-    "x-rapidapi-host": "bayut.p.rapidapi.com",
-  },
-};
+export const baseUrl = "https://bayut.p.rapidapi.com";
 
-export const FetchFromApi = async (url) => {
-  const { data } = await axios.get(`${BASE_URL}/${url}`, options);
+export const fetchApi = async (url) => {
+  const { data } = await axios.get(url, {
+    method: "GET",
+    headers: {
+      "x-rapidapi-key": "32a452f4bbmsh3f09250ab34ee28p13eb29jsn2a516c670511",
+      "x-rapidapi-host": "bayut.p.rapidapi.com",
+    },
+  });
+
   return data;
 };

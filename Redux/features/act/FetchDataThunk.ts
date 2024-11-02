@@ -2,15 +2,16 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const url =
-  "https://bayut-com1.p.rapidapi.com/properties/list?name=Abu%20Dhabi&purpose=for-sale&hitsPerPage=30&page=0&sort=city-level-score";
+  "https://bayut.p.rapidapi.com/properties/list?locationExternalIDs=5002%2C6020&purpose=for-sale&hitsPerPage=25&page=0&lang=en&sort=city-level-score&rentFrequency=monthly&categoryExternalID=4";
 
 const GetSale = createAsyncThunk("user/getdata", async (_, thunkapi) => {
   const { rejectWithValue } = thunkapi;
   try {
     const req = await axios.get(url, {
+      method: "GET",
       headers: {
-        "x-rapidapi-key": "9b7928c1d2msha124e05e4b043abp1ede7bjsnbf13cd325843",
-        "x-rapidapi-host": "bayut-com1.p.rapidapi.com",
+        "x-rapidapi-key": "32a452f4bbmsh3f09250ab34ee28p13eb29jsn2a516c670511",
+        "x-rapidapi-host": "bayut.p.rapidapi.com",
       },
     });
     return req.data.hits;

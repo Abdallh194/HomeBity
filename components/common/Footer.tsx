@@ -64,21 +64,21 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-lg-2 footer-card">
-            <div className="head">Our Services</div>
+            <div className="footer-head">Our Services</div>
             <div className="desc mt-5">Interior design</div>
             <div className="desc">Outdoor design</div>
             <div className="desc">Lightning design</div>
             <div className="desc">Office design</div>
           </div>
           <div className="col-lg-2 footer-card">
-            <div className="head">Our Services</div>
+            <div className="footer-head">Our Services</div>
             <div className="desc mt-5">Reviews</div>
             <div className="desc">Careers</div>
             <div className="desc">Pricing</div>
             <div className="desc">Press inquires</div>
           </div>
           <div className="col-lg-3 footer-card">
-            <div className="head">Our Services</div>
+            <div className="footer-head">Our Services</div>
             <div className="desc mt-5">info@vivadecor.com</div>
             <div className="desc">
               Design Avenue Cityville, CA 90210 United States

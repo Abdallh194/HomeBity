@@ -534,4 +534,115 @@ html {
   .Search .animation {
     max-width: 100%;
   }
+}
+
+.HouseDetails .head {
+  background-color: #043f47;
+  color: white;
+  padding: 15px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.HouseDetails .cusmt {
+  margin-top: 3rem;
+}
+.HouseDetails .swiper-wrapper {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.HouseDetails .swiper-wrapper .img-fluid {
+  max-width: 100%;
+  height: 460px;
+}
+.HouseDetails .contacts {
+  margin-top: 20px;
+}
+.HouseDetails .contacts .icon {
+  background-color: #e5eff0;
+  color: #043f47;
+  display: flex;
+  align-items: center;
+  padding: 7px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.HouseDetails .price {
+  font-size: 25px;
+  font-weight: 500;
+}
+.HouseDetails .price span {
+  font-size: 14px;
+}
+.HouseDetails .verified {
+  display: inline-block;
+  font-size: 17px;
+  color: #0db8b8;
+  margin: -4px -4px 0 0;
+}
+.HouseDetails .house-area {
+  position: relative;
+  font-weight: 500;
+  width: 85%;
+}
+.HouseDetails .house-area span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.HouseDetails .house-area span::after {
+  position: absolute;
+  content: "";
+  right: -34px;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background-color: #9e9e9e;
+}
+.HouseDetails .title {
+  font-size: 19px;
+}
+.HouseDetails .location {
+  font-size: 18px;
+}
+.HouseDetails .location span {
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+}
+.HouseDetails .location span::after {
+  position: absolute;
+  content: "";
+  right: -14px;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background-color: #9e9e9e;
+}
+.HouseDetails .property {
+  border-bottom: 1px solid #eee;
+  padding: 5px 6px 8px 13px;
+  display: flex;
+}
+.HouseDetails .property div {
+  width: 160px;
+}
+.HouseDetails .property span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.HouseDetails .amenities .amenti {
+  font-size: 18px;
+  font-weight: 500;
+}
+.HouseDetails .amenities span {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  background-color: #008fa3;
+  color: white;
+  margin-top: 10px;
+  padding: 2px 8px;
 }/*# sourceMappingURL=globals.css.map */
