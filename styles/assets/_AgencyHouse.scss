@@ -1,0 +1,51 @@
+.AgencyHouse {
+  .top-head {
+    height: 350px;
+    background: linear-gradient(270deg, #e9f7f0, #e9f7f0 0.01%, #b2cfd1);
+    position: relative;
+    color: white;
+  }
+  .agency-name {
+    font-size: 78px;
+    font-weight: 700;
+    color: $main-color;
+  }
+  .logo {
+    position: absolute;
+    border-radius: 50%;
+    top: 73%;
+    .img-fluid {
+      border-radius: 50%;
+      border: 15px solid white;
+    }
+  }
+  .row {
+    margin-top: 150px;
+  }
+  @media (max-width: 1200px) {
+    .top-head {
+      height: 280px;
+    }
+    .agency-name {
+      font-size: 55px;
+    }
+  }
+  @media (max-width: 992px) {
+    .top-head {
+      height: 200px;
+    }
+    .agency-name {
+      font-size: 25px;
+    }
+    .logo {
+      .img-fluid {
+        max-width: 60%;
+        border: 8px solid white;
+        margin: auto;
+      }
+    }
+    .row {
+      margin-top: 100px;
+    }
+  }
+}

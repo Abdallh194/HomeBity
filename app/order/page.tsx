@@ -375,8 +375,6 @@ const Order = () => {
     dispatch(GetSale());
     dispatch(GetDataRent());
   }, [dispatch]);
-  const date = new Date().getMilliseconds();
-  console.log("renrender", date);
 
   // catch search term
   const inputRefSale = useRef<HTMLInputElement>(null);
@@ -385,6 +383,7 @@ const Order = () => {
   const [inputValueErrorRent, setinputValueErrorRent] = useState(false);
   const router = useRouter();
 
+  //catch sale Price
   const handleButtonClick = () => {
     if (inputRefSale.current?.value && inputRefSale.current.value.length > 0) {
       setinputValueError(false);
@@ -395,6 +394,7 @@ const Order = () => {
       setinputValueError(true);
     }
   };
+  //catch Rent Price
   const handleButtonClickRent = () => {
     if (inputRefRent.current?.value && inputRefRent.current.value.length > 0) {
       setinputValueErrorRent(false);
@@ -405,6 +405,7 @@ const Order = () => {
       setinputValueErrorRent(true);
     }
   };
+  //SearchBar
   const SearchBar = ({ title }: { title: string }) => (
     <div className="search-bar">
       <div className="sale-head fw-medium">Home available for {title}</div>

@@ -7,7 +7,7 @@ const options = {
   params: {
     locationExternalIDs: "5002,6020",
     purpose: "for-rent",
-    hitsPerPage: "25",
+    hitsPerPage: "12",
     page: "0",
     lang: "en",
     sort: "city-level-score",

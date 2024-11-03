@@ -679,4 +679,52 @@ html {
   .HouseDetails .cusmt {
     margin-top: 1rem;
   }
+}
+
+.AgencyHouse .top-head {
+  height: 350px;
+  background: linear-gradient(270deg, #e9f7f0, #e9f7f0 0.01%, #b2cfd1);
+  position: relative;
+  color: white;
+}
+.AgencyHouse .agency-name {
+  font-size: 78px;
+  font-weight: 700;
+  color: #043f47;
+}
+.AgencyHouse .logo {
+  position: absolute;
+  border-radius: 50%;
+  top: 73%;
+}
+.AgencyHouse .logo .img-fluid {
+  border-radius: 50%;
+  border: 15px solid white;
+}
+.AgencyHouse .row {
+  margin-top: 150px;
+}
+@media (max-width: 1200px) {
+  .AgencyHouse .top-head {
+    height: 280px;
+  }
+  .AgencyHouse .agency-name {
+    font-size: 55px;
+  }
+}
+@media (max-width: 992px) {
+  .AgencyHouse .top-head {
+    height: 200px;
+  }
+  .AgencyHouse .agency-name {
+    font-size: 25px;
+  }
+  .AgencyHouse .logo .img-fluid {
+    max-width: 60%;
+    border: 8px solid white;
+    margin: auto;
+  }
+  .AgencyHouse .row {
+    margin-top: 100px;
+  }
 }/*# sourceMappingURL=globals.css.map */

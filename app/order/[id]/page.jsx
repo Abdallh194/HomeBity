@@ -14,13 +14,15 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Image from "next/image";
-import { IoBedOutline } from "react-icons/io5";
+import { IoArrowForward, IoBedOutline } from "react-icons/io5";
 import { FaBath, FaPhone, FaWhatsapp } from "react-icons/fa6";
 import { FaChartArea } from "react-icons/fa";
 import { MdNotListedLocation, MdVerified } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 import Footer from "@/components/common/Footer";
-
+import Lottie from "lottie-react";
+import loader from "../../../public/LottieFiles/loader.json";
+import Link from "next/link";
 const HouseDetailsComponent = ({ params }) => {
   const { HouseDetails, loading, error } = useAppSelector(
     (state) => state.Global
@@ -28,12 +30,20 @@ const HouseDetailsComponent = ({ params }) => {
 
   const dispatch = useAppDispatch();
   const { id } = params;
+
   useEffect(() => {
     dispatch(GetHouseDetails(id));
   }, [id, dispatch]);
 
   if (loading === "pending") {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <Lottie
+          style={{ maxWidth: "200px", margin: "auto" }}
+          animationData={loader}
+        />{" "}
+      </div>
+    );
   }
 
   if (error) {
@@ -129,6 +139,13 @@ const HouseDetailsComponent = ({ params }) => {
                   <FaWhatsapp style={{ marginRight: "4px" }} /> WhatsApp
                 </a>
               </div>
+              <Link
+                href={`/agency/${agency.externalID}`}
+                className="name fw-medium d-block text-black mt-3"
+              >
+                View all agency properties{" "}
+                <IoArrowForward style={{ display: "inline-block" }} />
+              </Link>
             </div>
           </Col>
           <Col md={12} lg={6} className="house-details-card">

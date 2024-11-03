@@ -44,20 +44,10 @@ const AboutUs = () => {
               your unique style and aspirations, crafted with precision and
               brilliance for an unforgettable
             </div>
-            <div className="">
-              <Link
-                href="/orderSale"
-                className=" Gb-btn d-block txtDecoration_None"
-              >
-                Sale a House
-              </Link>
-              <Link
-                href="/orderRent"
-                className=" Gb-btn d-block txtDecoration_None"
-              >
-                Rent a House
-              </Link>
-            </div>
+
+            <Link href="/order" className=" Gb-btn d-block txtDecoration_None">
+              Sale a House
+            </Link>
           </Col>
           <Col md={12} lg={6} className="ImgCard p-0">
             <Image
